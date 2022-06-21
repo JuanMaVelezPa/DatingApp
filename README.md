@@ -6,7 +6,7 @@
 ---
 ## Instalation
 * cd API
-* dotnet run
+    * dotnet run
 
 * cd Client
-* ng serve
+    * ng serve
