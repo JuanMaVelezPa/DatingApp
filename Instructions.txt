@@ -1,0 +1,103 @@
+
+DATABASE
+    For update DB
+        - cd API
+        - dotnet ef migrations add [<Name new migration>]
+        - dotnet ef database update
+        - dotnet ef database drop
+    For Table Photos
+        - cd API
+        - dotnet ef migrations add ExtendedUserEntitiy
+            - For remove migration
+            - dotnet ef migrations remove
+        - dotnet ef database 
+    Eliminate database
+        - dotnet ef database drop
+
+
+Creating Navbar
+    - cd client/src/app
+    - ng g c nav --skip-tests
+
+Angular Services
+    - cd client/src/app/_services
+    - ng g s account --skip-tests
+    
+Create Home Page
+    - cd cliente/src/app
+    - ng g c home --skip-tests
+
+Create Forms
+    - cd client/src/app
+    - ng g c register --skip-tests
+
+Routing
+    - cd client/src/app/
+    - mkdir members
+    - cd members
+    - ng g c member-list --skip-tests
+    - ng g c member-detail --skip-tests
+    - cd ..
+    - ng g c lists --skip-tests
+    - ng g c messages --skip-tests
+
+Notification Toast Service for Notification
+    - cd client
+    - npm install ngx-toastr
+    - angular. --styles{} -- add
+        "./node_modules/font-awesome/css/font-awesome.css",
+        "./node_modules/ngx-toastr/toastr.css",
+
+Regards
+    - cd client/src/app
+    - ng g guard auth --skip-test
+        - CanActivate
+
+New Theme Client
+    - cd cliente
+    - npm i bootswatch
+    - angular.json
+        - styles "./node_modules/bootswatch/dist/united/bootstrap.css"
+    - restart app ng serve
+
+Tyding Module app.modules.ts
+    - cd client/src/app
+    - mkdir _modules
+    - cd _modules
+    - ng g m shared --flat
+
+Errors in Client
+    - mkdir Erros
+    - ng g c test-errors --skip-tests
+
+Error Interceptos
+    - cd client/src/app
+    - mkdir _interceptors
+    - cd _interceptors
+    - ng g interceptor --skip-tests
+    - error
+
+Add AutoMapper
+    - Open NuGet Gallery
+    - AutoMapper.Extensions.Microsoft.DependencyInjection
+    
+
+Member Service
+    - cd client/src/app/_services
+    - ng g s members --skip-tests
+
+Create Members Cads
+    - cd client/src/app/members
+    - ng g c member-card --skip-tests
+
+Interceptor to send the token
+    - cd client/src/app/_interceptors
+    - ng g interceptor jwt --skip-tests
+
+Adding Photo Gallery
+    - cd client
+        [   - 1. Delete the node_modules folder
+            - 2. Delete package-lock.json from your folder
+            - 3. Run npm cache clean -force
+            - 4. Run npm install    ]
+    - npm i @kolkov/ngx-gallery --force
