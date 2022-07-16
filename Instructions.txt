@@ -101,3 +101,21 @@ Adding Photo Gallery
             - 3. Run npm cache clean -force
             - 4. Run npm install    ]
     - npm i @kolkov/ngx-gallery --force
+
+Create Member Edit Componente
+    - cd client/src/app/members
+    - ng g c member-edit --skip-tests
+
+Can Deactivate route guarde
+    - cd cliente/src/app/_guards
+    - ng g guard prevent-unsaved-changes --skip-tests
+    - CantDeactivate
+
+Loading indicator
+    - cd cliente/
+    - npm install ngx-spinner@^10.0.1 --force
+    - cd client/src/app/_services
+    - ng g s busy --skip-tests
+
+    - cd client/src/app/_interceptors
+    - ng g interceptor loading --skip-tets
